@@ -1,4 +1,4 @@
-//step 1) require the modules we need
+
 var
 http = require('http'),
 path = require('path'),
@@ -54,8 +54,8 @@ function requestHandler(req, res) {
     getFile((localFolder + fileName),res,page404);
 };
  
-//step 2) create the server
+
 http.createServer(requestHandler)
  
-//step 3) listen for an HTTP request on port 3000
+
 .listen(3000);
